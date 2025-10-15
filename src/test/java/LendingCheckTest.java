@@ -41,6 +41,12 @@ class LendingCheckTest {
             "56, 10000000, true",
             "65, 5000000, false",
 
+            // test case kiem thu dong dieu khien voi do do C2
+            "36, 10000000, true",
+            "20, 4000000, false",
+            "58, 10000000, true",
+            "57, 6000000, false",
+            "64, 15000000, false",
 
     })
     void testLoanEligibility(int age, int income, boolean expected) {
