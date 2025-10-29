@@ -48,6 +48,15 @@ class LendingCheckTest {
             "57, 6000000, false",
             "64, 15000000, false",
 
+            // kiem thu dong du lieu
+            "24, 3000000, false",
+            "65, 10000000, false",
+            "59, 11000000, true",
+            "30, 20000000, true",
+            "58, 5000000, false",
+
+
+
     })
     void testLoanEligibility(int age, int income, boolean expected) {
         assertEquals(expected, LendingCheck.isEligibleForLoan(age, income));
